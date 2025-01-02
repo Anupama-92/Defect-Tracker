@@ -15,7 +15,7 @@ class ChorusDashboardPage(BasePageFragments):
 
     @staticmethod
     def DT_label():
-        return ChorusDashboardPageLocators().DT_lablel
+        return ChorusDashboardPageLocators().DT_label
 
     def wait_for_load(self, timeout=Constants.default_throttle):
         self.h.verify(lambda: self.verify_element_present(self.cognine_logo()), timeout=timeout,
