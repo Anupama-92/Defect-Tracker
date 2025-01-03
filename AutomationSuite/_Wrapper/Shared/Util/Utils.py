@@ -25,7 +25,7 @@ class Utils(object):
         try:
             return self.__date
         except AttributeError:
-            from AutomationTests._Wrapper.Shared.Util import DateUtil
+            from AutomationSuite._Wrapper.Shared.Util import DateUtil
             self.__date = DateUtil
             return self.__date
 
