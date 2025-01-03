@@ -1,0 +1,37 @@
+portal_login:
+  member_id: Default
+
+machine_data:
+  run_params:
+    browser_type: chrome
+    site_mode:
+      default: qa
+
+logging:
+  log_folder: None
+  log_level: INFO
+  console: True
+
+screenshots:
+  override: False
+  path: Null
+
+sites:
+  run_params:
+    site_mode:
+      web_ui_configs:
+        dev: https://chorusdev.cogninelabs.com/
+        qa: https://chorusqa.cogninelabs.com/
+        prod: # TODO need to provide the production url
+
+
+chorus:
+  web_ui_configs:
+    dev: https://chorusdev.cogninelabs.com/
+    qa: https://chorusqa.cogninelabs.com/
+    prod: # TODO need to provide the production url
+
+
+credentials: # Can provide the email address and password if member_id in portal_logins is not found
+  email:
+  password:
