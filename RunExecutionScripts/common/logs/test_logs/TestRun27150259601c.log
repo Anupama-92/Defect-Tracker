@@ -1,0 +1,4 @@
+2024-03-27 15:02:59,882 [INFO] automation Test has started.
+2024-03-27 15:02:59,882 [INFO] automation Navigating to the https://chorusqa.cogninelabs.com/
+2024-03-27 15:03:06,283 [INFO] automation CPU Percent: 0.0	Virtual Memory: svmem(total=12635017216, available=2137374720, percent=83.1, used=10497642496, free=2137374720)
+2024-03-27 15:03:06,288 [WARNING] automation screenshot failed: 'NoneType' object has no attribute 'get_screenshot_as_file'

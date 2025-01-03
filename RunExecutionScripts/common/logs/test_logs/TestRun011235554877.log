@@ -1,0 +1,210 @@
+2024-04-01 12:35:55,305 [INFO] automation Test has started.
+2024-04-01 12:35:55,306 [INFO] automation Navigating to the https://chorusqa.cogninelabs.com/
+2024-04-01 12:35:59,584 [ERROR] automation Element located by i0116 is not present. Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="i0116"]"}
+  (Session info: chrome=122.0.6261.131); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF67417AD02+56930]
+	(No symbol) [0x00007FF6740EF602]
+	(No symbol) [0x00007FF673FA42E5]
+	(No symbol) [0x00007FF673FE98ED]
+	(No symbol) [0x00007FF673FE9A2C]
+	(No symbol) [0x00007FF67402A967]
+	(No symbol) [0x00007FF67400BCDF]
+	(No symbol) [0x00007FF6740281E2]
+	(No symbol) [0x00007FF67400BA43]
+	(No symbol) [0x00007FF673FDD438]
+	(No symbol) [0x00007FF673FDE4D1]
+	GetHandleVerifier [0x00007FF6744F6F8D+3711213]
+	GetHandleVerifier [0x00007FF6745504CD+4077101]
+	GetHandleVerifier [0x00007FF67454865F+4044735]
+	GetHandleVerifier [0x00007FF674219736+706710]
+	(No symbol) [0x00007FF6740FB8DF]
+	(No symbol) [0x00007FF6740F6AC4]
+	(No symbol) [0x00007FF6740F6C1C]
+	(No symbol) [0x00007FF6740E68D4]
+	BaseThreadInitThunk [0x00007FF9494C257D+29]
+	RtlUserThreadStart [0x00007FF94AC4AA58+40]
+
+2024-04-01 12:35:59,645 [ERROR] automation Element located by i0116 is not present. Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="i0116"]"}
+  (Session info: chrome=122.0.6261.131); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF67417AD02+56930]
+	(No symbol) [0x00007FF6740EF602]
+	(No symbol) [0x00007FF673FA42E5]
+	(No symbol) [0x00007FF673FE98ED]
+	(No symbol) [0x00007FF673FE9A2C]
+	(No symbol) [0x00007FF67402A967]
+	(No symbol) [0x00007FF67400BCDF]
+	(No symbol) [0x00007FF6740281E2]
+	(No symbol) [0x00007FF67400BA43]
+	(No symbol) [0x00007FF673FDD438]
+	(No symbol) [0x00007FF673FDE4D1]
+	GetHandleVerifier [0x00007FF6744F6F8D+3711213]
+	GetHandleVerifier [0x00007FF6745504CD+4077101]
+	GetHandleVerifier [0x00007FF67454865F+4044735]
+	GetHandleVerifier [0x00007FF674219736+706710]
+	(No symbol) [0x00007FF6740FB8DF]
+	(No symbol) [0x00007FF6740F6AC4]
+	(No symbol) [0x00007FF6740F6C1C]
+	(No symbol) [0x00007FF6740E68D4]
+	BaseThreadInitThunk [0x00007FF9494C257D+29]
+	RtlUserThreadStart [0x00007FF94AC4AA58+40]
+
+2024-04-01 12:35:59,705 [ERROR] automation Element located by i0116 is not present. Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="i0116"]"}
+  (Session info: chrome=122.0.6261.131); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF67417AD02+56930]
+	(No symbol) [0x00007FF6740EF602]
+	(No symbol) [0x00007FF673FA42E5]
+	(No symbol) [0x00007FF673FE98ED]
+	(No symbol) [0x00007FF673FE9A2C]
+	(No symbol) [0x00007FF67402A967]
+	(No symbol) [0x00007FF67400BCDF]
+	(No symbol) [0x00007FF6740281E2]
+	(No symbol) [0x00007FF67400BA43]
+	(No symbol) [0x00007FF673FDD438]
+	(No symbol) [0x00007FF673FDE4D1]
+	GetHandleVerifier [0x00007FF6744F6F8D+3711213]
+	GetHandleVerifier [0x00007FF6745504CD+4077101]
+	GetHandleVerifier [0x00007FF67454865F+4044735]
+	GetHandleVerifier [0x00007FF674219736+706710]
+	(No symbol) [0x00007FF6740FB8DF]
+	(No symbol) [0x00007FF6740F6AC4]
+	(No symbol) [0x00007FF6740F6C1C]
+	(No symbol) [0x00007FF6740E68D4]
+	BaseThreadInitThunk [0x00007FF9494C257D+29]
+	RtlUserThreadStart [0x00007FF94AC4AA58+40]
+
+2024-04-01 12:35:59,768 [ERROR] automation Element located by i0116 is not present. Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="i0116"]"}
+  (Session info: chrome=122.0.6261.131); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF67417AD02+56930]
+	(No symbol) [0x00007FF6740EF602]
+	(No symbol) [0x00007FF673FA42E5]
+	(No symbol) [0x00007FF673FE98ED]
+	(No symbol) [0x00007FF673FE9A2C]
+	(No symbol) [0x00007FF67402A967]
+	(No symbol) [0x00007FF67400BCDF]
+	(No symbol) [0x00007FF6740281E2]
+	(No symbol) [0x00007FF67400BA43]
+	(No symbol) [0x00007FF673FDD438]
+	(No symbol) [0x00007FF673FDE4D1]
+	GetHandleVerifier [0x00007FF6744F6F8D+3711213]
+	GetHandleVerifier [0x00007FF6745504CD+4077101]
+	GetHandleVerifier [0x00007FF67454865F+4044735]
+	GetHandleVerifier [0x00007FF674219736+706710]
+	(No symbol) [0x00007FF6740FB8DF]
+	(No symbol) [0x00007FF6740F6AC4]
+	(No symbol) [0x00007FF6740F6C1C]
+	(No symbol) [0x00007FF6740E68D4]
+	BaseThreadInitThunk [0x00007FF9494C257D+29]
+	RtlUserThreadStart [0x00007FF94AC4AA58+40]
+
+2024-04-01 12:35:59,832 [ERROR] automation Element located by i0116 is not present. Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="i0116"]"}
+  (Session info: chrome=122.0.6261.131); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF67417AD02+56930]
+	(No symbol) [0x00007FF6740EF602]
+	(No symbol) [0x00007FF673FA42E5]
+	(No symbol) [0x00007FF673FE98ED]
+	(No symbol) [0x00007FF673FE9A2C]
+	(No symbol) [0x00007FF67402A967]
+	(No symbol) [0x00007FF67400BCDF]
+	(No symbol) [0x00007FF6740281E2]
+	(No symbol) [0x00007FF67400BA43]
+	(No symbol) [0x00007FF673FDD438]
+	(No symbol) [0x00007FF673FDE4D1]
+	GetHandleVerifier [0x00007FF6744F6F8D+3711213]
+	GetHandleVerifier [0x00007FF6745504CD+4077101]
+	GetHandleVerifier [0x00007FF67454865F+4044735]
+	GetHandleVerifier [0x00007FF674219736+706710]
+	(No symbol) [0x00007FF6740FB8DF]
+	(No symbol) [0x00007FF6740F6AC4]
+	(No symbol) [0x00007FF6740F6C1C]
+	(No symbol) [0x00007FF6740E68D4]
+	BaseThreadInitThunk [0x00007FF9494C257D+29]
+	RtlUserThreadStart [0x00007FF94AC4AA58+40]
+
+2024-04-01 12:35:59,899 [ERROR] automation Element located by i0116 is not present. Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="i0116"]"}
+  (Session info: chrome=122.0.6261.131); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF67417AD02+56930]
+	(No symbol) [0x00007FF6740EF602]
+	(No symbol) [0x00007FF673FA42E5]
+	(No symbol) [0x00007FF673FE98ED]
+	(No symbol) [0x00007FF673FE9A2C]
+	(No symbol) [0x00007FF67402A967]
+	(No symbol) [0x00007FF67400BCDF]
+	(No symbol) [0x00007FF6740281E2]
+	(No symbol) [0x00007FF67400BA43]
+	(No symbol) [0x00007FF673FDD438]
+	(No symbol) [0x00007FF673FDE4D1]
+	GetHandleVerifier [0x00007FF6744F6F8D+3711213]
+	GetHandleVerifier [0x00007FF6745504CD+4077101]
+	GetHandleVerifier [0x00007FF67454865F+4044735]
+	GetHandleVerifier [0x00007FF674219736+706710]
+	(No symbol) [0x00007FF6740FB8DF]
+	(No symbol) [0x00007FF6740F6AC4]
+	(No symbol) [0x00007FF6740F6C1C]
+	(No symbol) [0x00007FF6740E68D4]
+	BaseThreadInitThunk [0x00007FF9494C257D+29]
+	RtlUserThreadStart [0x00007FF94AC4AA58+40]
+
+2024-04-01 12:36:01,057 [ERROR] automation Element located by i0116 is not present. Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="i0116"]"}
+  (Session info: chrome=122.0.6261.131); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF67417AD02+56930]
+	(No symbol) [0x00007FF6740EF602]
+	(No symbol) [0x00007FF673FA42E5]
+	(No symbol) [0x00007FF673FE98ED]
+	(No symbol) [0x00007FF673FE9A2C]
+	(No symbol) [0x00007FF67402A967]
+	(No symbol) [0x00007FF67400BCDF]
+	(No symbol) [0x00007FF6740281E2]
+	(No symbol) [0x00007FF67400BA43]
+	(No symbol) [0x00007FF673FDD438]
+	(No symbol) [0x00007FF673FDE4D1]
+	GetHandleVerifier [0x00007FF6744F6F8D+3711213]
+	GetHandleVerifier [0x00007FF6745504CD+4077101]
+	GetHandleVerifier [0x00007FF67454865F+4044735]
+	GetHandleVerifier [0x00007FF674219736+706710]
+	(No symbol) [0x00007FF6740FB8DF]
+	(No symbol) [0x00007FF6740F6AC4]
+	(No symbol) [0x00007FF6740F6C1C]
+	(No symbol) [0x00007FF6740E68D4]
+	BaseThreadInitThunk [0x00007FF9494C257D+29]
+	RtlUserThreadStart [0x00007FF94AC4AA58+40]
+
+2024-04-01 12:36:01,118 [ERROR] automation Element located by i0116 is not present. Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="i0116"]"}
+  (Session info: chrome=122.0.6261.131); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF67417AD02+56930]
+	(No symbol) [0x00007FF6740EF602]
+	(No symbol) [0x00007FF673FA42E5]
+	(No symbol) [0x00007FF673FE98ED]
+	(No symbol) [0x00007FF673FE9A2C]
+	(No symbol) [0x00007FF67402A967]
+	(No symbol) [0x00007FF67400BCDF]
+	(No symbol) [0x00007FF6740281E2]
+	(No symbol) [0x00007FF67400BA43]
+	(No symbol) [0x00007FF673FDD438]
+	(No symbol) [0x00007FF673FDE4D1]
+	GetHandleVerifier [0x00007FF6744F6F8D+3711213]
+	GetHandleVerifier [0x00007FF6745504CD+4077101]
+	GetHandleVerifier [0x00007FF67454865F+4044735]
+	GetHandleVerifier [0x00007FF674219736+706710]
+	(No symbol) [0x00007FF6740FB8DF]
+	(No symbol) [0x00007FF6740F6AC4]
+	(No symbol) [0x00007FF6740F6C1C]
+	(No symbol) [0x00007FF6740E68D4]
+	BaseThreadInitThunk [0x00007FF9494C257D+29]
+	RtlUserThreadStart [0x00007FF94AC4AA58+40]
+
+2024-04-01 12:36:01,307 [INFO] automation Element located by i0116 is present.
+2024-04-01 12:36:08,476 [INFO] automation Element located by //div[@class='logo'] is present.
+2024-04-01 12:36:12,588 [INFO] automation Element located by //div[@class='tableFixHead']/table/tbody/tr[contains(@class,'even_col')][1] is present.
+2024-04-01 12:36:15,056 [INFO] automation Element located by //select[@formcontrolname='industry'] is present.
+2024-04-01 12:36:15,059 [INFO] automation Element located by //select[@formcontrolname='industry'] is present.
+2024-04-01 12:36:15,557 [INFO] automation CPU Percent: 4.0	Virtual Memory: svmem(total=12635017216, available=2301943808, percent=81.8, used=10333073408, free=2301943808)
+2024-04-01 12:36:15,663 [INFO] automation screenshot logged as: C:\Users\Thanusha Kotaprolu\Automation Projects\cognine-crm-automation\RunExecutionScripts\common\logs\screenshots\test_crm_email_drafts_page_smoke_test__fail011236153e21.png
+2024-04-01 12:36:15,665 [ERROR] automation Test failed.

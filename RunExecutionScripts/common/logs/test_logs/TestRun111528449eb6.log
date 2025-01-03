@@ -1,0 +1,7 @@
+2024-03-11 15:28:44,731 [INFO] automation Test has started.
+2024-03-11 15:28:44,731 [INFO] automation Navigating to the https://chorusdevnew.cogninelabs.com/
+2024-03-11 15:28:47,537 [INFO] WDM Get LATEST edgedriver version for Edge 122.0.2365
+2024-03-11 15:28:48,132 [INFO] WDM Get LATEST edgedriver version for Edge 122.0.2365
+2024-03-11 15:28:48,635 [INFO] WDM Driver [C:\Users\Thanusha Kotaprolu\.wdm\drivers\edgedriver\win64\122.0.2365.80\msedgedriver.exe] found in cache
+2024-03-11 15:28:51,412 [INFO] automation CPU Percent: 25.9	Virtual Memory: svmem(total=12635017216, available=3077087232, percent=75.6, used=9557929984, free=3077087232)
+2024-03-11 15:28:51,417 [WARNING] automation screenshot failed: 'NoneType' object has no attribute 'get_screenshot_as_file'
