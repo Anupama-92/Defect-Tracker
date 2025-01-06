@@ -1,9 +1,7 @@
 import pytest
 
-from AutomationTests._Wrapper.Shared.Constants import Constants
-from AutomationTests._Wrapper.Shared.Util.Utils import Utils
 from AutomationSuite._Wrapper.login import Login
-from AutomationTests.cog_config import COGConfig
+from AutomationSuite.cog_config import COGConfig
 
 
 @pytest.fixture()

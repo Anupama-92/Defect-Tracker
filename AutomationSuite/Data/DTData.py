@@ -5,7 +5,7 @@ class Modules:
     build_rejections = "Build Rejections"
 
 
-class SelectProject:
+class Selectproject:
     abcc_cognine_timesheet = "ABCC - COGNINE_TIMESHEET"
     abcd_abcd = "ABCD - ABCD"
     adobe_cognine = "ADOBE - COGNINE"

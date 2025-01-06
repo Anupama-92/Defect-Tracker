@@ -4,7 +4,6 @@ from AutomationSuite._Wrapper.Shared.Constants import Constants
 from AutomationSuite._Wrapper.Shared.WebElements import WebElement
 
 
-
 class BasePageFragments(WebElement):
 
     def __init__(self):
@@ -15,8 +14,24 @@ class BasePageFragments(WebElement):
         return BaseLocators().app
 
     @staticmethod
+    def switch_to_frame():
+        return BaseLocators().iframe
+
+    @staticmethod
     def select_project():
         return BaseLocators().select_project
+
+    @staticmethod
+    def modules():
+        return BaseLocators().modules
+
+    @staticmethod
+    def module():
+        return BaseLocators().module
+
+    @staticmethod
+    def sub_module():
+        return BaseLocators().sub_module
 
     @staticmethod
     def project_selection():
@@ -38,10 +53,14 @@ class BasePageFragments(WebElement):
     def success_alert():
         return BaseLocators().success_text
 
-
     def navigate_to_app(self, app_name):
         menu_name_path = self.app_item() % f"{app_name}"
         self.click_element(element_locator=menu_name_path)
+
+    def switch_to_iframe(self, iframe_locator):
+        iframe_element = self.find_element(element_locator=iframe_locator)
+        # Switch to the iframe
+        self.switch_to.frame(iframe_element)
 
     def grid_wait_for_load(self, ready_state=None, switch=False):
         fail_message = f'Table wait_for_load failed. Table in page did not load.'
@@ -65,6 +84,31 @@ class BasePageFragments(WebElement):
                           fail_message=fail_message)
         else:
             self._log.error(f"Provide the ready_state for the table_wait_for_load.")
+
+    def get_modules(self, switch=False):
+        sleep(2)
+        if switch:
+            self.switch_to_frame_by_index(0)
+        return self.get_texts_of_elements(elements_locator=self.modules())
+
+    def hover_to_module(self, module_name, switch=False):
+        sleep(1)
+        if switch:
+            self.switch_to_frame_by_index(0)
+        self.perform_hover(element_locator=self.module().format(module_name))
+
+    def navigate_to_module(self, module_name, switch=False):
+        sleep(1)
+        if switch:
+            self.switch_to_frame_by_index(0)
+        self.click_element(element_locator=self.module().format(module_name))
+
+    def click_sub_module(self, module_name, sub_module_name, switch=False, selector="xpath"):
+        sleep(1)
+        if switch:
+            self.switch_to_frame_by_index(0)
+        self.hover_to_module(module_name)
+        self.click_element(element_locator=self.sub_module().format(sub_module_name), selector=selector)
 
     def verify_success(self, timeout=Constants.long_throttle):
         self.h.verify(lambda: self.verify_element_present(self.success_alert()), timeout=timeout,
