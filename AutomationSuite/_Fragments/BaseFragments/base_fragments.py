@@ -57,10 +57,6 @@ class BasePageFragments(WebElement):
         menu_name_path = self.app_item() % f"{app_name}"
         self.click_element(element_locator=menu_name_path)
 
-    def switch_to_iframe(self, iframe_locator):
-        iframe_element = self.find_element(element_locator=iframe_locator)
-        # Switch to the iframe
-        self.switch_to.frame(iframe_element)
 
     def grid_wait_for_load(self, ready_state=None, switch=False):
         fail_message = f'Table wait_for_load failed. Table in page did not load.'

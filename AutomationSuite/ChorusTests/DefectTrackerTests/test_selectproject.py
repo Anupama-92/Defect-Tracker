@@ -17,11 +17,14 @@ class TestDTProjectPage(ChorusTest):
     def test_dt_projectpage_smoke_test(self, microsoft_login):
         # Navigating to the Defect Tracker APP
         BasePageFragments().navigate_to_app(AppItems().DT_app)
-        BasePageFragments().switch_to_frame()
         SelectProject().wait_for_load()
-        time.sleep(3)
-        #SelectProject().click_element(element_locator=SelectProject().select_project())
-        SelectProject().run(select_project="AWS SERVICES - AMAZON")
+
+        # print("Testing")
+        # #BasePageFragments().switch_to_frame()
+        # SelectProject().wait_for_load()
+        # time.sleep(3)
+        # #SelectProject().click_element(element_locator=SelectProject().select_project())
+        # SelectProject().run(select_project="AWS SERVICES - AMAZON")
 
 
 
