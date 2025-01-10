@@ -1,39 +1,35 @@
 pipeline {
     agent any
-    environment {
-        VENV_DIR = '.venv' // Virtual environment
-    }
     stages {
-        stage('Clone Repository') {
+        stage('Build') {
             steps {
-                git branch: 'main', url: 'https://github.com/Anupama-92/Defect-Tracker.git'
+                echo 'Building...'
+                // Add your build commands here, e.g., 'mvn clean package' for a Maven project
             }
         }
-        stage('Setup Environment') {
+        stage('Test') {
             steps {
-                sh 'python3 -m venv $VENV_DIR'
-                sh '$VENV_DIR/bin/pip install -r requirements.txt'
+                echo 'Testing...'
+                // Add test commands here, e.g., 'mvn test'
             }
         }
-        stage('Run Tests') {
+        stage('Deploy') {
             steps {
-                sh '$VENV_DIR/bin/python -m pytest --html=report.html --self-contained-html'
-            }
-        }
-        stage('Publish Report') {
-            steps {
-                publishHTML([allowMissing: false,
-                             alwaysLinkToLastBuild: true,
-                             keepAll: true,
-                             reportDir: '.',
-                             reportFiles: 'report.html',
-                             reportName: 'Selenium Test Report'])
+                echo 'Deploying...'
+                // Add deployment steps here
             }
         }
     }
     post {
         always {
-            cleanWs() // Clean workspace after the build
+            echo 'Cleaning up...'
+            // Add cleanup steps, e.g., deleting temporary files
+        }
+        success {
+            echo 'Build succeeded!'
+        }
+        failure {
+            echo 'Build failed.'
         }
     }
 }
