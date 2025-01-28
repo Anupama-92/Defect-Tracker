@@ -13,11 +13,15 @@ class DTListPage(BasePageFragments):
     def select_project():
         return dtListPageLocators().select_project
 
+    @staticmethod
+    def select_project1():
+        return dtListPageLocators().select_project1
+
 
 class SelectProject(DTListPage):
     def wait_for_load(self, timeout=Constants.long_throttle,switch=False):
         if switch:
-            self.switch_to_frame_by_name_or_id("undefined")
+            self.switch_to_frame_by_name_or_id(BasePageFragments().switch_to_frame())
             print("Test")
             self.h.verify(lambda: self.verify_element_present(self.select_project(), selector="id"), timeout=timeout,
                       fail_message="Screen failed to load")

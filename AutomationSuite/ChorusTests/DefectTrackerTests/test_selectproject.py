@@ -15,16 +15,25 @@ from AutomationSuite.Data.DTData import Selectproject
 class TestDTProjectPage(ChorusTest):
 
     def test_dt_projectpage_smoke_test(self, microsoft_login):
-        # Navigating to the Defect Tracker APP
+        # Navigate to the Defect Tracker App
         BasePageFragments().navigate_to_app(AppItems().DT_app)
-        SelectProject().wait_for_load()
 
-        # print("Testing")
-        # #BasePageFragments().switch_to_frame()
-        # SelectProject().wait_for_load()
-        # time.sleep(3)
-        # #SelectProject().click_element(element_locator=SelectProject().select_project())
-        # SelectProject().run(select_project="AWS SERVICES - AMAZON")
+        # Wait for the iframe and switch to it
+        SelectProject().wait_for_load(switch=True)
+        
+
+        # Select the project from the dropdown
+        SelectProject().run(select_project=Selectproject.aws_services_amazon)
+
+        # Wait for the auto-suggestions to load and click the correct option (if needed)
+        SelectProject().click_element(
+            element_locator=SelectProject().select_project1, selector="xpath"
+        )
+
+        # (Optional) Verify successful selection
+        assert Selectproject.aws_services_amazon in SelectProject().get_element_value(
+            SelectProject().select_project(), selector="xpath"
+        )
 
 
 

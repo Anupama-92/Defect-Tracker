@@ -113,3 +113,10 @@ class BasePageFragments(WebElement):
     def verify_success_alert_disappeared(self, timeout=Constants.long_throttle):
         self.h.verify(lambda: self.verify_element_disappeared(self.success_alert()), timeout=timeout,
                       fail_message="Success toast failed to disappear or Operation is not successful")
+
+    def get_element_value(self, element_locator, selector="xpath"):
+        """
+        Retrieves the value of an element (e.g., input field value).
+        """
+        element = self.find_element(element_locator=element_locator, selector=selector)
+        return element.get_attribute("value")
