@@ -14,12 +14,12 @@ class BasePageFragments(WebElement):
         return BaseLocators().app
 
     @staticmethod
-    def switch_to_frame():
-        return BaseLocators().iframe
+    def table_1st_row():
+        return BaseLocators().table_1st_row
 
     @staticmethod
-    def select_project():
-        return BaseLocators().select_project
+    def table_no_data():
+        return BaseLocators().table_no_data
 
     @staticmethod
     def modules():
@@ -34,8 +34,16 @@ class BasePageFragments(WebElement):
         return BaseLocators().sub_module
 
     @staticmethod
-    def project_selection():
-        return BaseLocators().project_selection
+    def row_in_div():
+        return BaseLocators().row_in_div
+
+    @staticmethod
+    def row_in_td():
+        return BaseLocators().row_in_td
+
+    @staticmethod
+    def row_in_a():
+        return BaseLocators().row_in_a
 
     @staticmethod
     def toggle_switch():
@@ -53,12 +61,34 @@ class BasePageFragments(WebElement):
     def success_alert():
         return BaseLocators().success_text
 
+    @staticmethod
+    def multi_select_dropdown_select_all():
+        return BaseLocators().multi_select_dropdown_select_all
+
+    @staticmethod
+    def multi_select_dropdown_search():
+        return BaseLocators().multi_select_dropdown_search
+
+    @staticmethod
+    def multi_select_dropdown_option():
+        return BaseLocators().multi_select_dropdown_option
+
     def navigate_to_app(self, app_name):
         menu_name_path = self.app_item() % f"{app_name}"
         self.click_element(element_locator=menu_name_path)
 
-
     def grid_wait_for_load(self, ready_state=None, switch=False):
+        """
+        Standard table_wait_for_load for a table. By default, it verifies that one of the three criteria is true.
+        If a specific ready_state value is provided, it only checks
+        one validation rule.
+
+        * Please note that loading & loaded are case-sensitive & must be lowed case *
+
+        1.) 'loaded' = at least 1 row and cell with data is loaded.
+        2.) 'no results' = "No Data Found" text is displayed in list view
+        3.) 'loading' = means the list view autoloads, but you aren't sure that there are records or no records found
+        """
         fail_message = f'Table wait_for_load failed. Table in page did not load.'
 
         # Most to all tables are housed within the default frame.
@@ -106,6 +136,32 @@ class BasePageFragments(WebElement):
         self.hover_to_module(module_name)
         self.click_element(element_locator=self.sub_module().format(sub_module_name), selector=selector)
 
+    def click_on_row_name_in_grid(self, row_name=None):
+        fail_message = "Row not found"
+        if row_name is not None:
+            if self.h.verify(lambda: self.verify_element_present(self.row_in_div().format(row_name)),
+                             timeout=Constants.default_throttle, fail_message=fail_message):
+                self.scroll_to_element(element_locator=self.row_in_div().format(row_name))
+                self.click_element(element_locator=self.row_in_div().format(row_name))
+            elif self.h.verify(lambda: self.verify_element_present(self.row_in_a().format(row_name)),
+                               timeout=Constants.default_throttle, fail_message=fail_message):
+                self.scroll_to_element(element_locator=self.row_in_div().format(row_name))
+                self.click_element(element_locator=self.row_in_a().format(row_name))
+            elif self.h.verify(lambda: self.verify_element_present(self.row_in_td().format(row_name)),
+                               timeout=Constants.default_throttle, fail_message=fail_message):
+                self.scroll_to_element(element_locator=self.row_in_div().format(row_name))
+                self.click_element(element_locator=self.row_in_td().format(row_name))
+
+    def click_toggle_switch_in_grid(self, click=True):
+        if click:
+            self.click_element(element_locator=self.toggle_switch())
+
+    def handle_crm_popup(self, click_yes=True, click_close=False):
+        if click_yes:
+            self.click_element(element_locator=self.popup_yes_btn())
+        if click_close:
+            self.click_element(element_locator=self.popup_close_btn())
+
     def verify_success(self, timeout=Constants.long_throttle):
         self.h.verify(lambda: self.verify_element_present(self.success_alert()), timeout=timeout,
                       fail_message="Success toast failed to load or Operation is not successful")
@@ -113,10 +169,3 @@ class BasePageFragments(WebElement):
     def verify_success_alert_disappeared(self, timeout=Constants.long_throttle):
         self.h.verify(lambda: self.verify_element_disappeared(self.success_alert()), timeout=timeout,
                       fail_message="Success toast failed to disappear or Operation is not successful")
-
-    def get_element_value(self, element_locator, selector="xpath"):
-        """
-        Retrieves the value of an element (e.g., input field value).
-        """
-        element = self.find_element(element_locator=element_locator, selector=selector)
-        return element.get_attribute("value")

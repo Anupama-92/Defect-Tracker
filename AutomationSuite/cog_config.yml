@@ -5,7 +5,7 @@ machine_data:
   run_params:
     browser_type: chrome
     site_mode:
-      default: dev
+      default: qa
 
 logging:
   log_folder: None

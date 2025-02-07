@@ -3,11 +3,12 @@ class Modules:
     select_project = "Select Project"
     defect_list = "Defect List"
     build_rejections = "Build Rejections"
+    active_projects = "Active Projects"
 
 
-class Selectproject:
+class SelectProject:
     abcc_cognine_timesheet = "ABCC - COGNINE_TIMESHEET"
-    abcd_abcd = "ABCD - ABCD"
+    c2cc_abc = "C2CC-ABC"
     adobe_cognine = "ADOBE - COGNINE"
     audit_nick = "AUDIT - NICK"
     audit_challenge_shane = "AUDIT CHALLENGE - SHANE"
