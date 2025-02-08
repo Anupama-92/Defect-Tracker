@@ -23,7 +23,7 @@ class TestDTProjectPage(ChorusTest):
         # Wait for the iframe and switch to it
         BasePageFragments().navigate_to_module(module_name=Modules().defect_list, switch=True)
         DefectListPage().wait_for_load()
-        DefectListPage().run(select_project=SelectProject().c2cc_abc)
+        DefectListPage().run(select_project=SelectProject().aws_services_amazon)
         
 
 

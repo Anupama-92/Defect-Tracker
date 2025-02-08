@@ -1,3 +1,7 @@
+import time
+
+from selenium.webdriver import Keys
+
 from AutomationSuite.Data.DTData import Modules
 from AutomationSuite._Fragments.BaseFragments.base_fragments import BasePageFragments
 from AutomationSuite._Locators.DTLocators.dt_locator import dtListPageLocators
@@ -26,5 +30,9 @@ class DefectListPage(DTListPage):
     def run(self, select_project=None, timeout=Constants.default_throttle):
         self.wait_for_load(timeout)
         if select_project is not None:
-            self.select_dropdown_option_by_value(element_locator=self.select_project(), option_value=select_project)
+            # self.select_dropdown_option_by_value(element_locator=self.select_project(), option_value=select_project)
+            self.send_keys_to_element(element_locator=self.select_project(), keys=select_project, selector="xpath")
+            self.wait_for_load(timeout)
+            self.send_keys_to_element(element_locator=self.select_project(), keys=Keys.ENTER)
+            self.wait_for_load(timeout)
 

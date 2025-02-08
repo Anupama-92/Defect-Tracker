@@ -12,7 +12,7 @@ class SelectProject:
     adobe_cognine = "ADOBE - COGNINE"
     audit_nick = "AUDIT - NICK"
     audit_challenge_shane = "AUDIT CHALLENGE - SHANE"
-    aws_services_amazon = "AWS SERVICES - AMAZON"
+    aws_services_amazon = " AWS SERVICES - AMAZON "
     bike_hero = "BIKE - HERO"
     bikes_royal_enfield = "BIKES - ROYAL ENFIELD"
 

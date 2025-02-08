@@ -26,9 +26,11 @@ def upload_file_with_form_data(file_path, token):
             response = requests.post(url, headers=headers, files=files)
 
             if response.status_code == 200:
-                return response.json()  # Return JSON response
+                print("Excel uploaded successfully!")
+                return True
             else:
-                return {"error": response.text}  # Return error details
+                print(f"Failed to upload Excel. Status Code: {response.status_code}")
+                return False
         except requests.RequestException as e:
             return {"error": f"Request failed: {str(e)}"}
 
