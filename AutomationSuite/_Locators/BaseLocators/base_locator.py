@@ -4,7 +4,7 @@ class BaseLocators:
     table_no_data = ("//div[@class='tableFixHead']/div[contains(@class,'text-center')]/div/div/h6[contains(text(),"
                      "'No Data Found')]")
     modules = "//div[@id='navbarSupportedContent']/ul/li/a"
-    module = "//a[@id='ngb-nav-0']"
+    module = "//a[text()='Defect List']"
     sub_module = "//div[@id='navbarSupportedContent']/ul/li/ul/li/a[contains(text(),'{0}')]"
     row_in_div = "//div[@class='tableFixHead']/table/tbody/tr/td/div[contains(text(),'{0}')]"
     row_in_a = "//div[@class='tableFixHead']/table/tbody/tr/td/a[contains(text(),'{0}')]"

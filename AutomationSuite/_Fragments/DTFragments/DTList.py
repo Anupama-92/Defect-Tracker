@@ -11,8 +11,8 @@ class DTListPage(BasePageFragments):
 
     @staticmethod
     def select_project():
+        print("Testing")
         return dtListPageLocators().select_project
-
 
     def navigate_to_sub_module(self, sub_module):
         self.click_sub_module(module_name=Modules().defect_list, sub_module_name=sub_module)
@@ -27,3 +27,4 @@ class DefectListPage(DTListPage):
         self.wait_for_load(timeout)
         if select_project is not None:
             self.select_dropdown_option_by_value(element_locator=self.select_project(), option_value=select_project)
+

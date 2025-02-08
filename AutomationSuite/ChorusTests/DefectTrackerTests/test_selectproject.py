@@ -21,7 +21,7 @@ class TestDTProjectPage(ChorusTest):
         BasePageFragments().navigate_to_app(AppItems().DT_app)
         # DTHomePage().navigate_to_module("loaded", True)
         # Wait for the iframe and switch to it
-        BasePageFragments().navigate_to_module(module_name=Modules().defect_list)
+        BasePageFragments().navigate_to_module(module_name=Modules().defect_list, switch=True)
         DefectListPage().wait_for_load()
         DefectListPage().run(select_project=SelectProject().c2cc_abc)
         

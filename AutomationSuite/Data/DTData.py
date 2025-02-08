@@ -8,7 +8,7 @@ class Modules:
 
 class SelectProject:
     abcc_cognine_timesheet = "ABCC - COGNINE_TIMESHEET"
-    c2cc_abc = "C2CC-ABC"
+    c2cc_abc = "101"
     adobe_cognine = "ADOBE - COGNINE"
     audit_nick = "AUDIT - NICK"
     audit_challenge_shane = "AUDIT CHALLENGE - SHANE"

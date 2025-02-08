@@ -124,9 +124,11 @@ class BasePageFragments(WebElement):
         self.perform_hover(element_locator=self.module().format(module_name))
 
     def navigate_to_module(self, module_name, switch=False):
+        print("Testing")
         sleep(1)
         if switch:
-            self.switch_to_frame_by_index(0)
+            self.switch_to_frame_by_name_or_id("applicationId")
+            print("Switched to Iframe")
         self.click_element(element_locator=self.module().format(module_name))
 
     def click_sub_module(self, module_name, sub_module_name, switch=False, selector="xpath"):
